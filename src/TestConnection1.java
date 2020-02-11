@@ -19,7 +19,12 @@ public class TestConnection1 {
 
         //3、执行增删改查
         //3-1。执行sql语句
-        String sql = "delete from stuinfo where stuid = 1";
+        //删除
+        //String sql = "delete from stuinfo where stuid = 1";
+        //改动
+        //String sql = "update stuinfo set stuname = '李四' where stuid = 2";
+        //增加
+        String sql = "insert into stuinfo values(20,'小龙女','女','xiaolongnv',33, 23)";
 
         //3-2.获取执行sql语句的命令对象
         Statement statement = connection.createStatement();
